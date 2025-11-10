@@ -1,21 +1,20 @@
 <html>
   <head>
     <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-extras@7.2.0/dist/aframe-extras.min.js"></script>
   </head>
   <body>
-	<a-scene>
-		<a-sky color='#ECECEC'></a-sky>
-		<a-camera position='0 1.5 0'></a-camera>
-	
-		<!-- load the Blender file -->
-		<a-assets>
-			<a-asset-item id='daryl' src='portal.glb'></a-asset-item>
-		</a-assets>
-		<!-- Display file -->
-		<a-entity gltf-model='#daryl'></a-entity>
-	</a-scene>
+		<a-scene>
+			<a-sky color='black'></a-sky>
+			<a-camera position='14 9.5 -31'></a-camera>
+
+			<a-assests>
+				<a-assest-item id='anim' src='portal.glb'></a-assest-item>
+			</a-assests>
+
+		<a-entity gltf-model='#anim' animation-mixer></a-entity>
+			
+		</a-scene>
   </body>
 </html>
-
-
 
