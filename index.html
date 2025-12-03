@@ -8,9 +8,11 @@
 	<body>
 		<a-scene embedded arjs>
 			<a-marker preset="hiro">
-			<!-- create your AR content here -->
-			<a-cone color='red' top-radius='0' bottom-radius='3' height='4' position='0 0.5 0'></a-cone>
-			
+				
+			<a-box color='blue' height='2' width='2' depth='2' position='-2 5 0' rotation='0 0 0'></a-box>
+			<a-box color='lightblue' height='2' width='2' depth='2' position='2 5 0' rotation='0 0 0'></a-box>
+			<a-box color='red' height='2' width='2' depth='2' position='0 5 0' rotation='0 0 0'></a-box>
+  
 			</a-marker>
 
 			<!-- define a camera which will move according to the marker position -->
@@ -18,5 +20,6 @@
 		</a-scene>
 	</body>
 </html>
+
 
 
