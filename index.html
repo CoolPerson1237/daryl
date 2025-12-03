@@ -1,23 +1,22 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
-    <script src="https://unpkg.com/aframe-extras@7.2.0/dist/aframe-extras.min.js"></script>
-  </head>
-  <body>
-		<a-scene>
-			<a-sky color='black'></a-sky>
-			<a-camera position='0 2 10'></a-camera>
-
-			<a-assests>
-				<a-assest-item id='anim' src='portal.glb'></a-assest-item>
-			</a-assests>
-
-		<a-entity gltf-model='#anim' animation-mixer></a-entity>
+<head>
+<script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
+		<!-- include ar.js for a-frame -->
+		<script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+	</head>
+	<body>
+		<a-scene embedded arjs>
+			<a-marker preset="hiro">
+			<!-- create your AR content here -->
+			<a-cone color='red' top-radius='0' bottom-radius='3' height='4' position='0 0.5 0'></a-cone>
 			
+			</a-marker>
+
+			<!-- define a camera which will move according to the marker position -->
+			<a-entity camera></a-entity>
 		</a-scene>
-  </body>
+	</body>
 </html>
-
-
 
 
