@@ -7,19 +7,24 @@
 	<body>
 		<a-scene embedded arjs>
 			<a-marker type='pattern' url="https://raw.githubusercontent.com/CoolPerson1237/daryl/ar/pattern-paw.patt">
-			
-		<a-text 
-        value="This is a longer text example demonstrating wrapping and alignment." 
-        position="0 0.5 -0.5"         color="lightblue" 
-        width="2" 
+				
+		<a-box color='red' height='2' width='0.4' depth='0.4' position='-4 1.5 2' rotation='0 0 0' animation='property: rotation; to: 0 0 360; from: 0 0 0; loop: true;
+			'></a-box>
+				
+		
+				<a-text 
+        value="Welcome to Loveland!!!!!!!!!!!!!!!!" 
+        position="0 1.5 -0.5"         color="lightblue" 
+        width="4" 
         align="center" 
-        wrap-count="40"         rotation="-50 0 0"       ></a-text>
+        wrap-count="40"         rotation="-65 0 0"       ></a-text>
 			</a-marker>
 
 			<a-entity camera></a-entity>
 		</a-scene>
 	</body>
 </html>
+
 
 
 
