@@ -2,68 +2,21 @@
 <html>
 <head>
 <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
-		<!-- include ar.js for a-frame -->
 		<script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
 	</head>
 	<body>
 		<a-scene embedded arjs>
-			<a-marker type='pattern'  url="https://raw.githubusercontent.com/CoolPerson1237/daryl/ar/pattern-paw.patt">
+			<a-marker type='pattern' url="https://raw.githubusercontent.com/CoolPerson1237/daryl/ar/pattern-paw.patt">
 			
 		<a-text 
-        value="This is a longer text example demonstrating wrapping and alignment." 
-        position="0 -0.5 2" 
-        color="lightblue" 
-        width="2" 
-        align="center" 
-        wrap-count="20"
-        rotation="0 45 0"
-      ></a-text>
+        value="This is a longer text example demonstrating wrapping and alignment." 
+        position="0 0.5 -0.5"         color="lightblue" 
+        width="2" 
+        align="center" 
+        wrap-count="40"         rotation="0 0 0"       ></a-text>
 			</a-marker>
 
-			<!-- define a camera which will move according to the marker position -->
 			<a-entity camera></a-entity>
 		</a-scene>
 	</body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
