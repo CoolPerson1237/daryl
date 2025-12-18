@@ -1,23 +1,25 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
-    <script src="https://unpkg.com/aframe-extras@7.2.0/dist/aframe-extras.min.js"></script>
+    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
   </head>
-  <body>
-		<a-scene>
-			<a-sky color='black'></a-sky>
-			<a-camera position='0 2 10'></a-camera>
 
-			<a-assests>
-				<a-assest-item id='anim' src='portal.glb'></a-assest-item>
-			</a-assests>
+  <body style="margin: 0; overflow: hidden;">
+    <a-scene embedded renderer="logarithmicDepthBuffer: true;" arjs="sourceType: webcam; trackingMethod: best; debugUIEnabled: false;" vr-mode-ui="enabled: false">
 
-		<a-entity gltf-model='#anim' animation-mixer></a-entity>
+      <a-camera gps-camera rotation-reader></a-camera>
 			
-		</a-scene>
+	<a-assest-item id='anim' src='printer.glb'></a-assest-item>
+			</a-assests>	
+	
+      <!-- Stop 1 -->
+      <a-entity gltf-model="#anim" gps-entity-place="latitude: 39.27937805912878; longitude: -84.27569367057079;"></a-entity>
+		<a-assests>
+				
+    </a-scene>
   </body>
 </html>
-
 
 
 
